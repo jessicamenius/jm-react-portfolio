@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import M from "materialize-css/dist/js/materialize.min.js";
 
 function Header() {
   useEffect(() => {
@@ -8,19 +10,16 @@ function Header() {
   return (
     <div>
       <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">
+        <div className="nav-wrapper">
+          <Link to="/" className="">
             Jessica Menius
-          </a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          </Link>
+          <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
-              <a href="sass.html">Sass</a>
+              <Link to="/about">About Me</Link>
             </li>
             <li>
-              <a href="badges.html">Components</a>
-            </li>
-            <li>
-              <a href="collapsible.html">JavaScript</a>
+              <Link to="/projects">Projects</Link>
             </li>
           </ul>
         </div>
