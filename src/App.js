@@ -4,7 +4,6 @@ import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -22,9 +21,6 @@ function App() {
           </Route>
           <Route path="/projects">
             <Projects />
-          </Route>
-          <Route exact path="/contact">
-            <Contact />
           </Route>
         </Switch>
         <Footer />
