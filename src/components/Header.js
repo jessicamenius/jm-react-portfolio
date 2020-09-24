@@ -10,11 +10,14 @@ function Header() {
   return (
     <div>
       <nav>
-        <div className="nav-wrapper">
+        <div class="nav-wrapper">
           <Link to="/" className="">
             Jessica Menius
           </Link>
-          <ul id="nav-mobile" className="right hide-on-med-and-down">
+          <a data-target="mobile-demo" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
             <li>
               <Link to="/about">About Me</Link>
             </li>
@@ -24,6 +27,15 @@ function Header() {
           </ul>
         </div>
       </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+          <Link to="/about">About Me</Link>
+        </li>
+        <li>
+          <Link to="/projects">Projects</Link>
+        </li>
+      </ul>
     </div>
   );
 }
