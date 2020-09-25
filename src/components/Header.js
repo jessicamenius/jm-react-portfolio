@@ -10,7 +10,7 @@ function Header() {
   return (
     <div>
       <nav>
-        <div className="nav-wrapper">
+        <div className="nav-wrapper green darken-4 white-text">
           <Link to="/" class="brand-logo">
             Jessica Menius
           </Link>
