@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import M from "materialize-css/dist/js/materialize.min.js";
 
-function Header() {
+function Navbar() {
   useEffect(() => {
     M.AutoInit();
   }, []);
@@ -40,4 +40,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;
